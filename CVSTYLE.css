@@ -1,0 +1,28 @@
+html{text-align: center;
+	text-shadow: #FC0 1px 0 10px;
+}
+h1 {color: Green; 
+	font-family: Script; bold; }
+
+
+p{
+	color: Blue;
+	font-family: Georgia;	
+}
+.headings{ 
+	text-decoration-line: underline;
+	}
+
+
+@media(min-width:300px){
+	.container{
+		display:flex;
+		flex-basis:25%;
+		justify-content: space-between;
+	}
+}
+.column{
+		background-color:pink;
+		border:1px #ccc solid;
+}	
+
