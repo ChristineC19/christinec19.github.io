@@ -3,7 +3,10 @@ html{text-align: center;
 }
 h1 {color: Green; 
 	font-family: Script; bold; }
-
+.show{
+	background-color:white;
+	color:black;
+}
 
 p{
 	color: Blue;
@@ -11,8 +14,18 @@ p{
 }
 .headings{ 
 	text-decoration-line: underline;
+}
+	
+@media(min-width:300px){
+	.container{
+		display:flexbox;
+		justify-content:space-between;
 	}
-
+	.row1{
+		dt{text-align:left;}
+		dd{text-align:right;}
+	}
+}
 
 @media(min-width:300px){
 	.container1{
@@ -21,16 +34,19 @@ p{
 	}
 	.row{
 		justify-content:space-between;
+		text-align:left;
 	}
+	
+	
 }
 
-@media(min-width:500px){
-	.row1{
+@media(min-width:300px){
+	.row{
 		display:flexbox;
 		justify-content:space-between;
+		text-align:left;
 	}
-	dt{text-align:left;}
-	dd{text-align:right;}
+	
 }
 
 .column{
@@ -41,6 +57,7 @@ p{
 	.container2{
 		display:flex;
 		flex-basis:25%;
+		text-align:left;
 		justify-content:space-between;
 	}
 	.row{
